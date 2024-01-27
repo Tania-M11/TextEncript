@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Text encryptor</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.9-1/crypto-js.js"></script>
+
+</head>
+
+<body>
+  <header class="header">
+    <h1><img class="first-img" src="assets/img/casilleros.png" alt="gatito y casillero">Text encryptor</h1>
+  </header>
+  <article class="nav">
+    <h2><img class="second-img" src="assets/img/bloque-abc.png" alt="gatito bloque-abc"> Enter the text to encrypt </h2>
+  </article>
+
+  <section class="uc-left">
+    <!-- Contenido de la sección izquierda -->
+  </section>
+
+  <section class="uc-center">
+    <textarea class="textarea-style" name="inputText" id="inputText" cols="47" rows="6"></textarea><br>
+    <button id="button-encrypt">Encrypt</button>
+    <button id="button-decrypt">Decrypt</button>
+    
+  </section>
+
+  <article class="uc-right">
+    <h2></h2>
+  </article>
+  <footer class="footer">
+    
+    <p id="text-encrypt"></p>
+    <button id="button-copy">Copy Text</button>
+  </footer>
+  
+
+
+
+  <div class="waveWrapper waveAnimation">
+    <div class="waveWrapperInner bgTop">
+      <div class="wave waveTop" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgMiddle">
+      <div class="wave waveMiddle" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png')"></div>
+    </div>
+    <div class="waveWrapperInner bgBottom">
+      <div class="wave waveBottom" style="background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png')"></div>
+    </div>
+  </div>
+
+
+
+
+
+  <script src="index.js"></script>
+</body>
+
+</html>
