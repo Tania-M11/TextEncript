@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Función para encriptar el texto
     function encryptText(text) {
-      // Clave de encriptación (puedes cambiarla según tus necesidades)
       const key = "claveSuperSegura123";
   
       // Encriptar el texto usando CryptoJS
@@ -10,12 +9,9 @@ document.addEventListener("DOMContentLoaded", function () {
       return encryptedText;
     }
   
-    // Función para desencriptar el texto
+   
     function decryptText(encryptedText) {
-      // Clave de encriptación (debe ser la misma que usaste para encriptar)
       const key = "claveSuperSegura123";
-  
-      // Desencriptar el texto usando CryptoJS
       const decryptedText = CryptoJS.AES.decrypt(encryptedText, key).toString(CryptoJS.enc.Utf8);
   
       return decryptedText;
@@ -54,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Obtener elementos del DOM para el botón de copiar
     const buttonCopy = document.getElementById("button-copy");
   
-    // Agregar evento al botón de copiar
+    // evento al botón de copiar
     buttonCopy.addEventListener("click", function () {
       // Obtener el párrafo con el texto encriptado
       const textEncryptParagraph = document.getElementById("text-encrypt");
@@ -77,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
         setTimeout(() => {
           // Restaurar el texto del botón después de unos segundos
           buttonCopy.textContent = "Copy Text";
-        }, 2000); // Restaurar después de 2 segundos (puedes ajustar este valor)
+        }, 2000); // Restaurar después de 2 segundos
       } catch (err) {
         console.error("Unable to copy to clipboard. Use Ctrl+C / Cmd+C instead.");
       } finally {
